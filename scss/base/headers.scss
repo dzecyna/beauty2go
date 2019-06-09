@@ -5,4 +5,8 @@
   color: $goldColor;
   line-height: 82px;
   text-transform: uppercase;
+
+  &.red {
+    color: $redColor;
+  }
 }

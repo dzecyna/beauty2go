@@ -1,0 +1,16 @@
+.collage {
+  display: flex;
+
+  li {
+    overflow: hidden;
+    flex-grow: 1;
+
+    img {
+      transition: $transitionHover;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

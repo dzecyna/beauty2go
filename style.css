@@ -168,6 +168,8 @@ a {
   color: #E1B87F;
   line-height: 82px;
   text-transform: uppercase; }
+  .header.red {
+    color: #FF6F61; }
 
 .wrap-header-block {
   position: relative;
@@ -243,7 +245,7 @@ a {
       width: 90%;
       margin: 0 auto; }
       .default-two-block-section .wrap-info .info .header {
-        max-width: 455px;
+        max-width: 500px;
         margin-bottom: 20px; }
       .default-two-block-section .wrap-info .info .desc {
         margin-bottom: 35px;
@@ -260,12 +262,12 @@ a {
 .wrap-slider {
   position: relative;
   overflow: hidden;
-  padding: 130px 0 35px;
-  background: #F5F5F5 url("./images/aa.png") no-repeat right top; }
+  padding: 130px 0 110px;
+  background: #F5F5F5 url("./images/brush-slider.png") no-repeat right top; }
 
 .slider {
   position: initial;
-  max-width: 1340px;
+  max-width: 1490px;
   width: 90%;
   margin: 0 auto;
   text-align: center; }
@@ -291,15 +293,27 @@ a {
       right: 95px;
       transform: rotate(-45deg); }
   .slider .slick-slide {
-    overflow: hidden; }
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 75px; }
     .slider .slick-slide .image {
       margin: 0 auto 65px;
       border-radius: 100%; }
     .slider .slick-slide .desc {
+      position: relative;
       display: inline-block;
+      margin-bottom: 35px;
       font-size: 25px;
       line-height: 34px;
       text-align: left; }
+      .slider .slick-slide .desc:before {
+        content: '';
+        position: absolute;
+        left: -75px;
+        top: -60px;
+        width: 61px;
+        height: 67px;
+        background: url("./images/hochkomma.png") no-repeat; }
     .slider .slick-slide .author {
       position: relative;
       font: 55px 'Aescudos';
@@ -317,6 +331,16 @@ a {
       .slider .slick-slide .author:after {
         left: auto;
         right: -45px; }
+
+.collage {
+  display: flex; }
+  .collage li {
+    overflow: hidden;
+    flex-grow: 1; }
+    .collage li img {
+      transition: 0.3s; }
+      .collage li img:hover {
+        transform: scale(1.1); }
 
 .wrap-nav {
   display: flex;
