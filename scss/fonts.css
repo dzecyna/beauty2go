@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Aescudos';
+  src: url("./assert/fonts/Aescudos/Aescudos.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Aescudos';
+  src: url("./assert/fonts/Aescudos/Aescudos.woff") format("woff"), url("./assert/fonts/Aescudos/Aescudos.ttf") format("truetype"), url("./assert/fonts/Aescudos/Aescudos.svg#Aescudos") format("svg"), url("./assert/fonts/Aescudos/Aescudos.otf") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*# sourceMappingURL=fonts.css.map */
