@@ -14,3 +14,13 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Segoe-ui';
+  src: url('./assert/fonts/segoe-ui/segoe-ui-italic.ttf') format('truetype');
+  //url("./assert/fonts/segoe-ui/segoe-ui.woff" ) format('woff');
+  //url('./assert/fonts/segoe-ui/segoe-ui.svg#segoe-ui') format('svg'),
+  //url('./assert/fonts/segoe-ui/segoe-ui.otf') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

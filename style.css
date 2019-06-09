@@ -1,6 +1,18 @@
-body {
-  margin: 0; }
-
+@font-face {
+  font-family: 'Aescudos';
+  src: url("./assert/fonts/Aescudos/Aescudos.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Aescudos';
+  src: url("./assert/fonts/Aescudos/Aescudos.woff") format("woff"), url("./assert/fonts/Aescudos/Aescudos.ttf") format("truetype"), url("./assert/fonts/Aescudos/Aescudos.svg#Aescudos") format("svg"), url("./assert/fonts/Aescudos/Aescudos.otf") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Segoe-ui';
+  src: url("./assert/fonts/segoe-ui/segoe-ui-italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,10 +37,145 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, footer, header, menu, nav, section, video {
   display: block; }
 
+ul {
+  list-style: none; }
+
 :focus {
   outline: 0; }
 
 html, body {
-  font: 300 22px 'Open Sans', sans-serif; }
+  font: 300 22px 'Open Sans', sans-serif;
+  color: #2D2926;
+  line-height: 30px; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none;
+  transition: 0.3s; }
+  a:hover {
+    opacity: 0.7; }
+
+.button {
+  padding: 0 32px;
+  min-width: 218px;
+  border: 4px solid #E1B87F;
+  font-size: 26px;
+  line-height: 81px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #E1B87F;
+  transition: 0.3s;
+  cursor: pointer; }
+  .button:hover {
+    color: #FFF;
+    background: #E1B87F; }
+  .button-red {
+    border-color: #FF6F61;
+    color: #FF6F61; }
+    .button-red:hover {
+      color: #FFF;
+      background: #FF6F61; }
+
+.wrap-header {
+  position: relative;
+  background: url("./images/woman.png") no-repeat 18% 0; }
+  .wrap-header:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.4); }
+  .wrap-header .header {
+    overflow: hidden;
+    position: relative;
+    min-height: 771px;
+    padding-top: 38px;
+    box-sizing: border-box;
+    background: url("./images/brush-header.png") no-repeat right top, url("./images/brush-header_left.png") no-repeat bottom -65px left 0px; }
+    .wrap-header .header .schedule {
+      float: right;
+      margin: 40px 90px 0 0;
+      font: 400 30px "Segoe-ui";
+      color: #FFF;
+      line-height: 40px; }
+      .wrap-header .header .schedule .section {
+        margin-bottom: 40px; }
+        .wrap-header .header .schedule .section .label {
+          font-weight: 700;
+          text-transform: uppercase; }
+        .wrap-header .header .schedule .section .info {
+          display: block; }
+    .wrap-header .header .sell-block {
+      position: absolute;
+      bottom: 42px;
+      left: 177px;
+      width: 600px; }
+      .wrap-header .header .sell-block .title {
+        font: 160px 'Aescudos';
+        line-height: 190px; }
+      .wrap-header .header .sell-block .desc {
+        margin-bottom: 15px;
+        font-size: 35px;
+        color: #FFF;
+        line-height: 50px; }
+  .wrap-header .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+
+.wrap-logo {
+  display: block;
+  width: 190px;
+  margin-left: 47px; }
+  .wrap-logo:hover {
+    opacity: initial; }
+
+.wrap-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 80px; }
+  .wrap-nav .social-network-icons {
+    margin-bottom: 25px; }
+
+.main-nav ul {
+  display: flex; }
+  .main-nav ul li {
+    margin-left: 50px; }
+    .main-nav ul li:first-child {
+      margin-left: 0; }
+    .main-nav ul li a {
+      text-transform: uppercase;
+      font-size: 25px;
+      font-weight: 400;
+      color: #2D2926; }
+
+.social-network-icons {
+  display: flex; }
+  .social-network-icons .social-network-icon {
+    margin-left: 25px; }
+    .social-network-icons .social-network-icon:first-child {
+      margin-left: 0; }
+
+.social-network-icon {
+  transition: 0.3s; }
+  .social-network-icon.fb {
+    background: url("./images/facebook-icon.svg") no-repeat; }
+  .social-network-icon.inst {
+    background: url("./images/instagram-icon.svg") no-repeat; }
+  .social-network-icon.email {
+    background: url("./images/email-icon.svg") no-repeat; }
+  .social-network-icon:hover {
+    opacity: 0.7; }
+  .social-network-icon a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-indent: -9999px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+.button {
+  padding: 0 32px;
+  min-width: 218px;
+  border: 4px solid $goldColor;
+  font-size: 26px;
+  line-height: 81px;
+  border-radius: $radius;
+  text-transform: uppercase;
+  color: $goldColor;
+  transition: $transitionHover;
+  cursor: pointer;
+
+  &:hover {
+    color: $whiteColor;
+    background: $goldColor;
+  }
+
+  &-red {
+    border-color: $redColor;
+    color: $redColor;
+
+    &:hover {
+      color: $whiteColor;
+      background: $redColor;
+    }
+  }
+}

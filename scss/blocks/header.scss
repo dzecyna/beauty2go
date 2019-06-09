@@ -1,0 +1,81 @@
+.wrap-header {
+  position: relative;
+  background: url("./images/woman.png") no-repeat 18% 0;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .4);
+  }
+
+  .header {
+    overflow: hidden;
+    position: relative;
+    min-height: 771px;
+    padding-top: 38px;
+    box-sizing: border-box;
+    background: url("./images/brush-header.png") no-repeat right top,
+    url("./images/brush-header_left.png") no-repeat bottom -65px left 0px;
+
+    .schedule {
+      float: right;
+      margin: 40px 90px 0 0;
+      font: $fontWeightRegular 30px 'Segoe-ui';
+      color: $whiteColor;
+      line-height: 40px;
+
+      .section {
+        margin-bottom: 40px;
+
+        .label {
+          font-weight: $fontWeightBold;
+          text-transform: uppercase;
+        }
+
+        .info {
+          display: block;
+        }
+      }
+    }
+
+    .sell-block {
+      position: absolute;
+      bottom: 42px;
+      left: 177px;
+      width: 600px;
+
+      .title {
+        font: 160px 'Aescudos';
+        line-height: 190px;
+      }
+
+      .desc {
+        margin-bottom: 15px;
+        font-size: 35px;
+        color: $whiteColor;
+        line-height: 50px;
+      }
+    }
+  }
+
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.wrap-logo {
+  display: block;
+  width: 190px;
+  margin-left: 47px;
+
+  &:hover {
+    opacity: initial;
+  }
+}

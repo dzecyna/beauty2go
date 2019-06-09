@@ -1,3 +1,18 @@
 html, body {
   font: 300 22px 'Open Sans', sans-serif;
+  color: $mainColor;
+  line-height: 30px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: $transitionHover;
+
+  &:hover {
+    opacity: $opacityHover;
+  }
 }
