@@ -49,7 +49,8 @@ html, body {
   line-height: 30px; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  vertical-align: middle; }
 
 a {
   text-decoration: none;
@@ -62,7 +63,7 @@ a {
   min-width: 218px;
   border: 4px solid #E1B87F;
   font-size: 26px;
-  line-height: 81px;
+  line-height: 73px;
   border-radius: 5px;
   text-transform: uppercase;
   color: #E1B87F;
@@ -78,10 +79,18 @@ a {
       color: #FFF;
       background: #FF6F61; }
 
-.wrap-header {
+.header {
+  display: block;
+  font-size: 65px;
+  font-weight: 700;
+  color: #E1B87F;
+  line-height: 82px;
+  text-transform: uppercase; }
+
+.wrap-header-block {
   position: relative;
   background: url("./images/woman.png") no-repeat 18% 0; }
-  .wrap-header:before {
+  .wrap-header-block:before {
     content: '';
     display: block;
     position: absolute;
@@ -90,40 +99,40 @@ a {
     bottom: 0;
     left: 0;
     background: rgba(255, 255, 255, 0.4); }
-  .wrap-header .header {
+  .wrap-header-block .header-block {
     overflow: hidden;
     position: relative;
     min-height: 771px;
     padding-top: 38px;
     box-sizing: border-box;
     background: url("./images/brush-header.png") no-repeat right top, url("./images/brush-header_left.png") no-repeat bottom -65px left 0px; }
-    .wrap-header .header .schedule {
+    .wrap-header-block .header-block .schedule {
       float: right;
       margin: 40px 90px 0 0;
       font: 400 30px "Segoe-ui";
       color: #FFF;
       line-height: 40px; }
-      .wrap-header .header .schedule .section {
+      .wrap-header-block .header-block .schedule .section {
         margin-bottom: 40px; }
-        .wrap-header .header .schedule .section .label {
+        .wrap-header-block .header-block .schedule .section .label {
           font-weight: 700;
           text-transform: uppercase; }
-        .wrap-header .header .schedule .section .info {
+        .wrap-header-block .header-block .schedule .section .info {
           display: block; }
-    .wrap-header .header .sell-block {
+    .wrap-header-block .header-block .sell-block {
       position: absolute;
       bottom: 42px;
       left: 177px;
       width: 600px; }
-      .wrap-header .header .sell-block .title {
+      .wrap-header-block .header-block .sell-block .title {
         font: 160px 'Aescudos';
         line-height: 190px; }
-      .wrap-header .header .sell-block .desc {
+      .wrap-header-block .header-block .sell-block .desc {
         margin-bottom: 15px;
         font-size: 35px;
         color: #FFF;
         line-height: 50px; }
-  .wrap-header .top-header {
+  .wrap-header-block .top-header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; }
@@ -134,6 +143,30 @@ a {
   margin-left: 47px; }
   .wrap-logo:hover {
     opacity: initial; }
+
+.default-two-block-section {
+  display: flex; }
+  .default-two-block-section .wrap-info {
+    width: 50%;
+    display: flex;
+    align-items: center; }
+    .default-two-block-section .wrap-info .info {
+      max-width: 600px;
+      width: 90%;
+      margin: 0 auto; }
+      .default-two-block-section .wrap-info .info .header {
+        margin-bottom: 20px; }
+      .default-two-block-section .wrap-info .info .desc {
+        margin-bottom: 35px;
+        font-size: 22px;
+        font-weight: 300; }
+  .default-two-block-section .images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%; }
+    .default-two-block-section .images li {
+      flex-grow: 1;
+      width: 50%; }
 
 .wrap-nav {
   display: flex;
@@ -150,10 +183,20 @@ a {
     .main-nav ul li:first-child {
       margin-left: 0; }
     .main-nav ul li a {
+      position: relative;
       text-transform: uppercase;
       font-size: 25px;
       font-weight: 400;
       color: #2D2926; }
+      .main-nav ul li a:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #2D2926;
+        transition: 0.3s; }
+      .main-nav ul li a:hover:after {
+        width: 100%; }
 
 .social-network-icons {
   display: flex; }
