@@ -1,8 +1,20 @@
 .default-two-block-section {
   display: flex;
 
-  .wrap-info {
+  &>* {
     width: 50%;
+  }
+
+  &.woman-body {
+    height: 1072px;
+    background: url("./images/beauty-body-dermatologie.jpg") no-repeat left -25px top;
+
+    .wrap-info {
+      padding-bottom: 15%;
+    }
+  }
+
+  .wrap-info {
     display: flex;
     align-items: center;
 
@@ -12,6 +24,7 @@
       margin: 0 auto;
 
       .header {
+        max-width: 455px;
         margin-bottom: 20px;
       }
 

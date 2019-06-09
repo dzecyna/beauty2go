@@ -1,0 +1,83 @@
+.wrap-slider {
+  position: relative;
+  overflow: hidden;
+  padding: 130px 0 35px;
+  background: $lightGrey url("./images/aa.png") no-repeat right top;
+}
+
+.slider {
+  position: initial;
+  max-width: 1340px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 110px;
+    border: none;
+    border-right: 6px solid #D4D4D4;
+    border-bottom: 6px solid #D4D4D4;
+    text-indent: -9999px;
+    background: transparent;
+    transform: rotate(135deg);
+    cursor: pointer;
+    transition: $transitionHover;
+
+    &:hover {
+      opacity: $opacityHover;
+    }
+
+    &.slick-prev {
+      left: 95px;
+    }
+
+    &.slick-next {
+      right: 95px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .slick-slide {
+    overflow: hidden;
+
+    .image {
+      margin: 0 auto 65px;
+      border-radius: 100%;
+    }
+
+    .desc {
+      display: inline-block;
+      font-size: 25px;
+      line-height: 34px;
+      text-align: left;
+    }
+
+    .author {
+      position: relative;
+      font: 55px 'Aescudos';
+      color: $goldColor;
+
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        left: -45px;
+        background: $goldColor;
+        border-radius: $radius;
+      }
+
+      &:after {
+        left: auto;
+        right: -45px;
+      }
+    }
+  }
+}

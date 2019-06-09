@@ -13,6 +13,81 @@
   src: url("./assert/fonts/segoe-ui/segoe-ui-italic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,6 +122,13 @@ html, body {
   font: 300 22px 'Open Sans', sans-serif;
   color: #2D2926;
   line-height: 30px; }
+
+body {
+  opacity: 0;
+  transition: .3s; }
+
+body.visibility-shown {
+  opacity: 1; }
 
 img {
   max-width: 100%;
@@ -146,8 +228,14 @@ a {
 
 .default-two-block-section {
   display: flex; }
+  .default-two-block-section > * {
+    width: 50%; }
+  .default-two-block-section.woman-body {
+    height: 1072px;
+    background: url("./images/beauty-body-dermatologie.jpg") no-repeat left -25px top; }
+    .default-two-block-section.woman-body .wrap-info {
+      padding-bottom: 15%; }
   .default-two-block-section .wrap-info {
-    width: 50%;
     display: flex;
     align-items: center; }
     .default-two-block-section .wrap-info .info {
@@ -155,6 +243,7 @@ a {
       width: 90%;
       margin: 0 auto; }
       .default-two-block-section .wrap-info .info .header {
+        max-width: 455px;
         margin-bottom: 20px; }
       .default-two-block-section .wrap-info .info .desc {
         margin-bottom: 35px;
@@ -167,6 +256,67 @@ a {
     .default-two-block-section .images li {
       flex-grow: 1;
       width: 50%; }
+
+.wrap-slider {
+  position: relative;
+  overflow: hidden;
+  padding: 130px 0 35px;
+  background: #F5F5F5 url("./images/aa.png") no-repeat right top; }
+
+.slider {
+  position: initial;
+  max-width: 1340px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center; }
+  .slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 110px;
+    border: none;
+    border-right: 6px solid #D4D4D4;
+    border-bottom: 6px solid #D4D4D4;
+    text-indent: -9999px;
+    background: transparent;
+    transform: rotate(135deg);
+    cursor: pointer;
+    transition: 0.3s; }
+    .slider .slick-arrow:hover {
+      opacity: 0.7; }
+    .slider .slick-arrow.slick-prev {
+      left: 95px; }
+    .slider .slick-arrow.slick-next {
+      right: 95px;
+      transform: rotate(-45deg); }
+  .slider .slick-slide {
+    overflow: hidden; }
+    .slider .slick-slide .image {
+      margin: 0 auto 65px;
+      border-radius: 100%; }
+    .slider .slick-slide .desc {
+      display: inline-block;
+      font-size: 25px;
+      line-height: 34px;
+      text-align: left; }
+    .slider .slick-slide .author {
+      position: relative;
+      font: 55px 'Aescudos';
+      color: #E1B87F; }
+      .slider .slick-slide .author:before, .slider .slick-slide .author:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        top: 50%;
+        left: -45px;
+        background: #E1B87F;
+        border-radius: 5px; }
+      .slider .slick-slide .author:after {
+        left: auto;
+        right: -45px; }
 
 .wrap-nav {
   display: flex;
