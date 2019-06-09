@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background: $lightGrey;
+
+  .copyright {
+    font-size: 25px;
+    color: $grey;
+    text-transform: uppercase;
+  }
+}

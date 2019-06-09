@@ -15,13 +15,34 @@
     background: $goldColor;
   }
 
-  &-red {
+  &.red {
     border-color: $redColor;
     color: $redColor;
 
     &:hover {
       color: $whiteColor;
       background: $redColor;
+    }
+  }
+
+  &.inverted {
+    color: $whiteColor;
+    background: $goldColor;
+
+    &:hover {
+      color: $goldColor;
+      background: $whiteColor;
+    }
+
+    &.red {
+      color: $whiteColor;
+      background: $redColor;
+
+      &:hover {
+        border-color: $redColor;
+        color: $redColor;
+        background: $whiteColor;
+      }
     }
   }
 }

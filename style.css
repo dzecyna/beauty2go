@@ -115,11 +115,15 @@ article, aside, details, figcaption, figure, footer, header, menu, nav, section,
 ul {
   list-style: none; }
 
+input, button {
+  border: none;
+  font: 300 22px "Open Sans", sans-serif; }
+
 :focus {
   outline: 0; }
 
 html, body {
-  font: 300 22px 'Open Sans', sans-serif;
+  font: 300 22px "Open Sans", sans-serif;
   color: #2D2926;
   line-height: 30px; }
 
@@ -154,12 +158,25 @@ a {
   .button:hover {
     color: #FFF;
     background: #E1B87F; }
-  .button-red {
+  .button.red {
     border-color: #FF6F61;
     color: #FF6F61; }
-    .button-red:hover {
+    .button.red:hover {
       color: #FFF;
       background: #FF6F61; }
+  .button.inverted {
+    color: #FFF;
+    background: #E1B87F; }
+    .button.inverted:hover {
+      color: #E1B87F;
+      background: #FFF; }
+    .button.inverted.red {
+      color: #FFF;
+      background: #FF6F61; }
+      .button.inverted.red:hover {
+        border-color: #FF6F61;
+        color: #FF6F61;
+        background: #FFF; }
 
 .header {
   display: block;
@@ -170,6 +187,22 @@ a {
   text-transform: uppercase; }
   .header.red {
     color: #FF6F61; }
+
+.form-input {
+  color: #FF6F61;
+  border-bottom: 2px solid #FF6F61; }
+
+.form-input::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #FF6F61; }
+
+.form-input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #FF6F61; }
+
+.form-input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #FF6F61; }
 
 .wrap-header-block {
   position: relative;
@@ -342,6 +375,55 @@ a {
       .collage li img:hover {
         transform: scale(1.1); }
 
+.contact-section {
+  display: flex;
+  padding: 105px 80px; }
+  .contact-section .contact-block {
+    margin-left: 60px; }
+    .contact-section .contact-block:first-child {
+      margin-left: 0; }
+    .contact-section .contact-block > span {
+      display: block; }
+    .contact-section .contact-block .title {
+      color: #E1B87F;
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 46px; }
+    .contact-section .contact-block.red .title {
+      color: #FF6F61; }
+    .contact-section .contact-block .address {
+      padding-left: 30px;
+      background: url("./images/mappinicon.svg") no-repeat left top 5px; }
+      .contact-section .contact-block .address > span {
+        display: block; }
+    .contact-section .contact-block .phone {
+      padding-left: 30px;
+      background: url("./images/phoneicon.svg") no-repeat left top 5px; }
+      .contact-section .contact-block .phone a {
+        color: #2D2926; }
+    .contact-section .contact-block .schedule {
+      margin-top: 20px; }
+      .contact-section .contact-block .schedule span {
+        display: block; }
+    .contact-section .contact-block .form-input {
+      display: block;
+      width: 100%;
+      margin: 30px 0; }
+      .contact-section .contact-block .form-input.email {
+        padding-left: 40px;
+        background: url("./images/email-icon2.svg") no-repeat left center; }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background: #F5F5F5; }
+  .footer .copyright {
+    font-size: 25px;
+    color: #8B8B8B;
+    text-transform: uppercase; }
+
 .wrap-nav {
   display: flex;
   flex-direction: column;
@@ -378,15 +460,25 @@ a {
     margin-left: 25px; }
     .social-network-icons .social-network-icon:first-child {
       margin-left: 0; }
+    .social-network-icons .social-network-icon li {
+      color: #FF6F61; }
 
 .social-network-icon {
-  transition: 0.3s; }
+  transition: 0.3s;
+  background-repeat: no-repeat;
+  background-size: contain; }
   .social-network-icon.fb {
-    background: url("./images/facebook-icon.svg") no-repeat; }
+    background-image: url("./images/facebook-icon.svg"); }
   .social-network-icon.inst {
-    background: url("./images/instagram-icon.svg") no-repeat; }
+    background-image: url("./images/instagram-icon.svg"); }
   .social-network-icon.email {
-    background: url("./images/email-icon.svg") no-repeat; }
+    background-image: url("./images/email-icon.svg"); }
+  .social-network-icon.red.fb {
+    background-image: url("./images/facebook-icon-red.svg"); }
+  .social-network-icon.red.inst {
+    background-image: url("./images/instagram-icon-red.svg"); }
+  .social-network-icon.red.email {
+    background-image: url("./images/email-icon-red.svg"); }
   .social-network-icon:hover {
     opacity: 0.7; }
   .social-network-icon a {

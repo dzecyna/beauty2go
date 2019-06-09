@@ -7,22 +7,42 @@
     &:first-child {
       margin-left: 0;
     }
+
+    li {
+      color: $redColor;
+    }
   }
 }
 
 .social-network-icon {
   transition: $transitionHover;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   &.fb {
-    background: url("./images/facebook-icon.svg") no-repeat;
+    background-image: url("./images/facebook-icon.svg");
   }
 
   &.inst {
-    background: url("./images/instagram-icon.svg") no-repeat;
+    background-image: url("./images/instagram-icon.svg");
   }
 
   &.email {
-    background: url("./images/email-icon.svg") no-repeat;
+    background-image: url("./images/email-icon.svg");
+  }
+
+  &.red {
+    &.fb {
+      background-image: url("./images/facebook-icon-red.svg");
+    }
+
+    &.inst {
+      background-image: url("./images/instagram-icon-red.svg");
+    }
+
+    &.email {
+      background-image: url("./images/email-icon-red.svg");
+    }
   }
 
   &:hover {

@@ -30,6 +30,17 @@ ul {
 	list-style: none;
 }
 
+input, button {
+	border: none;
+	font: $fontWeightLight $defaultSize 'Open Sans', sans-serif;
+}
+
 :focus {
 	outline: 0;
+}
+
+html, body {
+	font: $fontWeightLight $defaultSize 'Open Sans', sans-serif;
+	color: $mainColor;
+	line-height: 30px;
 }

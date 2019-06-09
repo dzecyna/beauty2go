@@ -1,0 +1,68 @@
+.contact-section {
+  display: flex;
+  padding: 105px 80px;
+
+  .contact-block {
+    margin-left: 60px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    & > span {
+      display: block;
+    }
+
+    .title {
+      color: $goldColor;
+      font-size: 34px;
+
+      font-weight: $fontWeightBold;
+      line-height: 46px;
+    }
+
+    &.red {
+      .title {
+        color: $redColor;
+      }
+    }
+
+    .address {
+      padding-left: 30px;
+      background: url("./images/mappinicon.svg") no-repeat left top 5px;
+
+      & > span {
+        display: block;
+      }
+    }
+
+    .phone {
+      padding-left: 30px;
+      background: url("./images/phoneicon.svg") no-repeat left top 5px;
+
+      a {
+        color: $mainColor;
+      }
+    }
+
+    .schedule {
+      margin-top: 20px;
+
+      span {
+        display: block;
+      }
+    }
+
+    .form-input {
+      display: block;
+      width: 100%;
+      margin: 30px 0;
+
+      &.email {
+        padding-left: 40px;
+        background: url('./images/email-icon2.svg') no-repeat left center;
+      }
+    }
+  }
+}
+

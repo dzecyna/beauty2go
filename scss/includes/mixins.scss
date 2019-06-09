@@ -1,0 +1,13 @@
+@mixin colorPlaceholder($selector, $color) {
+  #{$selector}::placeholder { /* Firefox, Chrome, Opera */
+    color: $color;
+  }
+
+  #{$selector}:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $color;
+  }
+
+  #{$selector}::-ms-input-placeholder { /* Microsoft Edge */
+    color: $color;
+  }
+}
