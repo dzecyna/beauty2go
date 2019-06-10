@@ -145,6 +145,9 @@ a {
   a:hover {
     opacity: 0.7; }
 
+.overflow {
+  overflow: hidden; }
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -168,6 +171,7 @@ a {
       border-radius: 5px; }
 
 p {
+  margin-bottom: 35px;
   line-height: 1.6; }
 
 .button {
@@ -351,7 +355,6 @@ p {
     .two-block-section .wrap-info .info .header {
       margin-bottom: 20px; }
     .two-block-section .wrap-info .info p {
-      margin-bottom: 35px;
       font-size: 22px;
       font-weight: 300; }
     .two-block-section .wrap-info .info a {
@@ -375,17 +378,15 @@ p {
   flex-wrap: wrap;
   height: 100%; }
   .four-column-list .item {
-    display: flex;
-    flex-direction: column;
     flex-grow: 1;
     width: 25%;
-    margin-bottom: 70px;
-    text-align: center;
     transition: 0.3s;
     border: 6px solid #FFF;
-    box-sizing: border-box; }
-    .four-column-list .item:hover {
-      transform: scale(1.1); }
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+    text-align: center; }
     .four-column-list .item .content {
       flex-grow: 1;
       padding: 20px 15px; }
@@ -403,6 +404,8 @@ p {
         margin-bottom: 20px; }
     .four-column-list .item .button {
       margin: auto; }
+    .four-column-list .item:hover {
+      transform: scale(1.1); }
 
 .two-column-list {
   display: flex;
@@ -475,7 +478,6 @@ p {
     .slider .slick-slide .desc {
       position: relative;
       display: inline-block;
-      margin-bottom: 35px;
       font-size: 25px;
       line-height: 34px;
       text-align: left; }
@@ -551,7 +553,33 @@ p {
       margin: 30px 0; }
       .contact-section .contact-block .form-input.email {
         padding: 0 0 10px 40px;
-        background: url("./images/email-icon2.svg") no-repeat left 0 top 6px; }
+        background: url("./images/email-icon2.svg") no-repeat left 0 top 5px; }
+
+.team-card {
+  float: left;
+  max-width: 500px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+  text-align: center; }
+  .team-card .content {
+    flex-grow: 1;
+    padding: 20px 15px; }
+    .team-card .content > img {
+      display: block; }
+    .team-card .content .title {
+      display: block;
+      margin-bottom: 10px;
+      color: #FF6F61;
+      font-weight: 700;
+      font-size: 26px;
+      text-transform: uppercase; }
+    .team-card .content .desc {
+      display: block;
+      margin-bottom: 20px; }
+  .team-card .button {
+    margin: auto; }
 
 .footer {
   display: flex;

@@ -1,0 +1,7 @@
+.team-card {
+  float: left;
+  max-width: 500px;
+  margin-right: 50px;
+
+  @include card();
+}
