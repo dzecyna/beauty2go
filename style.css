@@ -140,7 +140,8 @@ img {
 
 a {
   text-decoration: none;
-  transition: 0.3s; }
+  transition: 0.3s;
+  color: #E1B87F; }
   a:hover {
     opacity: 0.7; }
 
@@ -323,47 +324,47 @@ p {
   .wrap-logo:hover {
     opacity: initial; }
 
-.two-block-section {
+.two-block-section .flex {
   display: flex; }
-  .two-block-section > * {
+  .two-block-section .flex > * {
     width: 50%; }
-  .two-block-section.woman-body {
-    height: 1072px;
-    background: url("./images/beauty-body-dermatologie.jpg") no-repeat left -25px top; }
-    .two-block-section.woman-body .wrap-info {
-      padding-bottom: 15%; }
-  .two-block-section.booking {
-    height: 1060px;
-    background: url("./images/coffetogo-mockup.jpg") no-repeat top center; }
-  .two-block-section .wrap-info {
-    display: flex;
-    align-items: center; }
-    .two-block-section .wrap-info .info {
-      width: 62.5%;
-      margin: 0 auto; }
-      .two-block-section .wrap-info .info .label {
-        display: block;
-        margin-bottom: 20px;
-        color: #E1B87F;
-        font-size: 22px;
-        font-weight: 700; }
-      .two-block-section .wrap-info .info .header {
-        margin-bottom: 20px; }
-      .two-block-section .wrap-info .info p {
-        margin-bottom: 35px;
-        font-size: 22px;
-        font-weight: 300; }
-      .two-block-section .wrap-info .info a {
-        color: #E1B87F; }
-  .two-block-section .images {
-    display: flex;
-    flex-wrap: wrap;
+.two-block-section.woman-body {
+  height: 1072px;
+  background: url("./images/beauty-body-dermatologie.jpg") no-repeat left -25px top; }
+  .two-block-section.woman-body .wrap-info {
+    padding-bottom: 15%; }
+.two-block-section.booking {
+  height: 1060px;
+  background: url("./images/coffetogo-mockup.jpg") no-repeat top center; }
+.two-block-section .wrap-info {
+  display: flex;
+  align-items: center; }
+  .two-block-section .wrap-info .info {
+    width: 62.5%;
+    margin: 0 auto; }
+    .two-block-section .wrap-info .info .label {
+      display: block;
+      margin-bottom: 20px;
+      color: #E1B87F;
+      font-size: 22px;
+      font-weight: 700; }
+    .two-block-section .wrap-info .info .header {
+      margin-bottom: 20px; }
+    .two-block-section .wrap-info .info p {
+      margin-bottom: 35px;
+      font-size: 22px;
+      font-weight: 300; }
+    .two-block-section .wrap-info .info a {
+      color: #E1B87F; }
+.two-block-section .images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%; }
+  .two-block-section .images li {
+    flex-grow: 1;
     width: 50%; }
-    .two-block-section .images li {
-      flex-grow: 1;
-      width: 50%; }
 
-.two-block-section__swap:nth-child(2n) {
+.two-block-section__swap:nth-child(2n) .flex {
   flex-direction: row-reverse; }
 
 .two-block-section__swap:nth-child(2n + 1) {

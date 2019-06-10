@@ -1,8 +1,10 @@
 .two-block-section {
-  display: flex;
+  .flex {
+    display: flex;
 
-  &>* {
-    width: 50%;
+    & > * {
+      width: 50%;
+    }
   }
 
   &.woman-body {
@@ -62,7 +64,7 @@
   }
 }
 
-.two-block-section__swap:nth-child(2n) {
+.two-block-section__swap:nth-child(2n) .flex {
   flex-direction: row-reverse;
 }
 

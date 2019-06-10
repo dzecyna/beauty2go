@@ -15,6 +15,7 @@ img {
 a {
   text-decoration: none;
   transition: $transitionHover;
+  color: $goldColor;
 
   &:hover {
     opacity: $opacityHover;
