@@ -8,4 +8,12 @@ $(document).ready(function() {
             autoplay: true
         });
     }
+
+    document.getElementById('mobile-menu-input').onclick = function() {
+        if (this.checked) {
+            document.body.classList.add('overflow');
+        } else {
+            document.body.classList.remove('overflow');
+        }
+    }
 });
