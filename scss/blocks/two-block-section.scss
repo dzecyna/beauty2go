@@ -1,4 +1,4 @@
-.default-two-block-section {
+.two-block-section {
   display: flex;
 
   &>* {
@@ -14,21 +14,24 @@
     }
   }
 
+  &.booking {
+    height: 1060px;
+    background: url("./images/coffetogo-mockup.jpg") no-repeat top center;
+  }
+
   .wrap-info {
     display: flex;
     align-items: center;
 
     .info {
-      max-width: 600px;
-      width: 90%;
+      width: 62.5%;
       margin: 0 auto;
 
       .header {
-        max-width: 500px;
         margin-bottom: 20px;
       }
 
-      .desc {
+      p {
         margin-bottom: 35px;
         font-size: $defaultSize;
         font-weight: $fontWeightLight;
@@ -46,4 +49,16 @@
       width: 50%;
     }
   }
+}
+
+.two-block-section__swap:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.two-block-section__swap:nth-child(2n + 1) {
+  background: $lightGrey;
+}
+
+.our-services {
+  padding-top: 200px;
 }

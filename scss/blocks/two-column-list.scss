@@ -1,0 +1,32 @@
+.two-column-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    display: flex;
+    flex-grow: 1;
+    width: 50%;
+    margin-bottom: 70px;
+
+    .wrap-img {
+      width: 170px;
+      height: 137px;
+      margin-right: 15px;
+    }
+
+    .content {
+      padding-top: 20px;
+
+      .title {
+        font-size: 35px;
+        font-weight: $fontWeightBold;
+        color: $redColor;
+        text-transform: uppercase;
+      }
+
+      .desc {
+        font-size: 28px;
+      }
+    }
+  }
+}

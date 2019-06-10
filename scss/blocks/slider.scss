@@ -77,15 +77,7 @@
 
       &:before,
       &:after {
-        content: '';
-        display: block;
-        width: 30px;
-        height: 3px;
-        position: absolute;
-        top: 50%;
-        left: -45px;
-        background: $goldColor;
-        border-radius: $radius;
+        @include line();
       }
 
       &:after {

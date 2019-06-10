@@ -1,6 +1,6 @@
 .wrap-header-block {
   position: relative;
-  background: url("./images/woman.png") no-repeat 18% 0;
+  background: url("./images/lippenunterspritzung-header.jpg") no-repeat center top;
 
   &:before {
     content: '';
@@ -19,8 +19,7 @@
     min-height: 771px;
     padding-top: 38px;
     box-sizing: border-box;
-    background: url("./images/brush-header.png") no-repeat right top,
-    url("./images/brush-header_left.png") no-repeat bottom -65px left 0px;
+    background: url("./images/brush-header.png") no-repeat right -80px top -500px;
 
     .schedule {
       float: right;
@@ -45,20 +44,25 @@
 
     .sell-block {
       position: absolute;
-      bottom: 42px;
+      bottom: 0;
       left: 177px;
-      width: 600px;
+      min-height: 418px;
 
       .title {
-        font: 160px 'Aescudos';
-        line-height: 190px;
+        font: 140px 'Aescudos';
+        line-height: 210px;
       }
 
       .desc {
         margin-bottom: 15px;
-        font-size: 35px;
-        color: $whiteColor;
-        line-height: 50px;
+        font-size: 45px;
+        font-weight: $fontWeightBold;
+        color: $redColor;
+        line-height: 80px;
+
+        &.red {
+          color: $redColor;
+        }
       }
     }
   }
@@ -67,6 +71,33 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+}
+
+.home-page {
+  .wrap-header-block {
+    background: url("./images/woman.png") no-repeat 18% 0;
+
+    .header-block {
+      background: url("./images/brush-header.png") no-repeat right top,
+      url("./images/brush-header_left.png") no-repeat bottom -65px left 0px;
+
+      .sell-block {
+        width: 600px;
+
+        .title {
+          font: 160px 'Aescudos';
+          line-height: 190px;
+        }
+
+        .desc {
+          font-size: 35px;
+          color: $whiteColor;
+          line-height: 50px;
+          font-weight: $fontWeightRegular;
+        }
+      }
+    }
   }
 }
 

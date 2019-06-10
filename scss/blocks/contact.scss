@@ -3,7 +3,7 @@
   padding: 105px 80px;
 
   .contact-block {
-    margin-left: 60px;
+    margin-left: 100px;
 
     &:first-child {
       margin-left: 0;
@@ -59,8 +59,8 @@
       margin: 30px 0;
 
       &.email {
-        padding-left: 40px;
-        background: url('./images/email-icon2.svg') no-repeat left center;
+        padding: 0 0 10px 40px;
+        background: url("./images/email-icon2.svg") no-repeat left 0 top 6px;
       }
     }
   }

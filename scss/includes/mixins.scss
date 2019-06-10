@@ -11,3 +11,15 @@
     color: $color;
   }
 }
+
+@mixin line() {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  background: $goldColor;
+  border-radius: $radius;
+}
