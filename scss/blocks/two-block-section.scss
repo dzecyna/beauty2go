@@ -27,6 +27,13 @@
       width: 62.5%;
       margin: 0 auto;
 
+      .label {
+        display: block;
+        margin-bottom: 20px;
+        color: $goldColor;
+        font-size: $defaultSize;
+        font-weight: $fontWeightBold;
+      }
       .header {
         margin-bottom: 20px;
       }
@@ -35,6 +42,10 @@
         margin-bottom: 35px;
         font-size: $defaultSize;
         font-weight: $fontWeightLight;
+      }
+
+      a {
+        color: $goldColor;
       }
     }
   }

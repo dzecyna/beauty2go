@@ -26,3 +26,21 @@ a {
   margin: 0 auto;
   padding: 50px 0;
 }
+
+.default-list {
+  margin-bottom: 40px;
+  padding-left: 50px;
+
+  li {
+    position: relative;
+    margin-bottom: 15px;
+
+    &:before {
+      @include line();
+    }
+  }
+}
+
+p {
+  line-height: 1.6;
+}
