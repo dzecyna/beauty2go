@@ -178,17 +178,23 @@ p {
   line-height: 1.6; }
 
 .button {
-  padding: 0 32px;
+  padding: 0 24px;
   min-width: 218px;
-  border: 4px solid #E1B87F;
-  font-size: 26px;
-  line-height: 73px;
+  border: 2px solid #E1B87F;
+  font-size: 20px;
+  line-height: 56px;
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: 700;
   color: #E1B87F;
   transition: 0.3s;
   cursor: pointer; }
+  @media screen and (min-width: 1501px) {
+    .button {
+      padding: 0 32px;
+      font-size: 26px;
+      line-height: 73px;
+      border-width: 4px; } }
   .button:hover {
     color: #FFF;
     background: #E1B87F; }
@@ -275,14 +281,23 @@ p {
     position: relative;
     min-height: 771px;
     padding-top: 38px;
-    box-sizing: border-box;
-    background: url("./images/brush-header.png") no-repeat right -80px top -500px; }
+    box-sizing: border-box; }
+    @media screen and (min-width: 600px) {
+      .wrap-header-block .header-block {
+        background: url("./images/brush-header.png") no-repeat right -80px top -500px; } }
     .wrap-header-block .header-block .schedule {
-      float: right;
-      margin: 40px 90px 0 0;
-      font: 400 30px "Segoe-ui";
-      color: #FFF;
-      line-height: 40px; }
+      margin-top: 40px;
+      font-weight: 400;
+      font-family: 'Segoe-ui', sans-serif;
+      font-size: 22px;
+      line-height: 40px;
+      margin-left: 25px; }
+      @media screen and (min-width: 1001px) {
+        .wrap-header-block .header-block .schedule {
+          float: right;
+          margin-right: 90px;
+          color: #FFF;
+          font-size: 30px; } }
       .wrap-header-block .header-block .schedule .section {
         margin-bottom: 40px; }
         .wrap-header-block .header-block .schedule .section .label {
@@ -291,10 +306,13 @@ p {
         .wrap-header-block .header-block .schedule .section .info {
           display: block; }
     .wrap-header-block .header-block .sell-block {
-      position: absolute;
-      bottom: 0;
-      left: 177px;
-      min-height: 418px; }
+      margin: 0 0 40px 25px; }
+      @media screen and (min-width: 1001px) {
+        .wrap-header-block .header-block .sell-block {
+          position: absolute;
+          bottom: 0;
+          left: 177px;
+          min-height: 418px; } }
       .wrap-header-block .header-block .sell-block .title {
         font: 140px 'Aescudos';
         line-height: 210px; }
@@ -311,26 +329,46 @@ p {
     justify-content: space-between;
     align-items: flex-start; }
 
-.home-page .wrap-header-block .header-block {
-  background: url("./images/brush-header.png") no-repeat right top, url("./images/brush-header_left.png") no-repeat bottom -65px left 0px; }
+@media screen and (max-width: 1000px) {
+  .home-page .wrap-header-block {
+    background: none !important; } }
+@media screen and (min-width: 1001px) {
+  .home-page .wrap-header-block .header-block {
+    background: url("./images/brush-header.png") no-repeat right top, url("./images/brush-header_left.png") no-repeat bottom -65px left 0px; } }
+@media screen and (min-width: 1001px) {
   .home-page .wrap-header-block .header-block .sell-block {
-    width: 600px; }
+    max-width: 600px; } }
+.home-page .wrap-header-block .header-block .sell-block .title {
+  font: 70px 'Aescudos';
+  line-height: 80px; }
+  @media screen and (min-width: 1001px) {
+    .home-page .wrap-header-block .header-block .sell-block .title {
+      font: 130px 'Aescudos';
+      line-height: 140px; } }
+  @media screen and (min-width: 1501px) {
     .home-page .wrap-header-block .header-block .sell-block .title {
       font: 160px 'Aescudos';
-      line-height: 190px; }
+      line-height: 190px; } }
+.home-page .wrap-header-block .header-block .sell-block .desc {
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400; }
+  @media screen and (min-width: 1501px) {
     .home-page .wrap-header-block .header-block .sell-block .desc {
       font-size: 35px;
-      color: #FFF;
-      line-height: 50px;
-      font-weight: 400; }
+      line-height: 190px; } }
+  @media screen and (min-width: 1001px) {
+    .home-page .wrap-header-block .header-block .sell-block .desc {
+      color: #FFF; } }
 
 .wrap-logo {
   display: block;
   width: 130px;
-  margin-left: 47px; }
+  margin-left: 25px; }
   @media screen and (min-width: 1501px) {
     .wrap-logo {
-      width: 190px; } }
+      width: 190px;
+      margin-left: 47px; } }
   .wrap-logo:hover {
     opacity: initial; }
 
