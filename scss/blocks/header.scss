@@ -1,6 +1,5 @@
 .wrap-header-block {
   position: relative;
-  background: url("./images/lippenunterspritzung-header.jpg") no-repeat center top;
 
   &:before {
     content: '';
@@ -10,7 +9,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(255, 255, 255, .4);
+    background: rgba(255, 255, 255, .5);
   }
 
   .header-block {
@@ -76,8 +75,6 @@
 
 .home-page {
   .wrap-header-block {
-    background: url("./images/woman.png") no-repeat 18% 0;
-
     .header-block {
       background: url("./images/brush-header.png") no-repeat right top,
       url("./images/brush-header_left.png") no-repeat bottom -65px left 0px;

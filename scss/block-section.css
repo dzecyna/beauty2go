@@ -1,0 +1,105 @@
+/*
+Error: Undefined variable: "$goldColor".
+        on line 41 of block-section.scss
+
+36:       margin: 0 auto;
+37: 
+38:       .label {
+39:         display: block;
+40:         margin-bottom: 20px;
+41:         color: $goldColor;
+42:         font-size: $defaultSize;
+43:         font-weight: $fontWeightBold;
+44:       }
+45:       .header {
+46:         margin-bottom: 20px;
+
+Backtrace:
+block-section.scss:41
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/gems/sass-3.5.6/bin/sass:13:in `<top (required)>'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/bin/sass:22:in `load'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/bin/sass:22:in `<main>'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `eval'
+/Users/dzecina/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$goldColor\".\A         on line 41 of block-section.scss\A \A 36:       margin: 0 auto;\A 37: \A 38:       .label {\A 39:         display: block;\A 40:         margin-bottom: 20px;\A 41:         color: $goldColor;\A 42:         font-size: $defaultSize;\A 43:         font-weight: $fontWeightBold;\A 44:       }\A 45:       .header {\A 46:         margin-bottom: 20px;"; }

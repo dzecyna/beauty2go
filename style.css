@@ -250,8 +250,7 @@ p {
   color: #FF6F61; }
 
 .wrap-header-block {
-  position: relative;
-  background: url("./images/lippenunterspritzung-header.jpg") no-repeat center top; }
+  position: relative; }
   .wrap-header-block:before {
     content: '';
     display: block;
@@ -260,7 +259,7 @@ p {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.4); }
+    background: rgba(255, 255, 255, 0.5); }
   .wrap-header-block .header-block {
     overflow: hidden;
     position: relative;
@@ -302,20 +301,18 @@ p {
     justify-content: space-between;
     align-items: flex-start; }
 
-.home-page .wrap-header-block {
-  background: url("./images/woman.png") no-repeat 18% 0; }
-  .home-page .wrap-header-block .header-block {
-    background: url("./images/brush-header.png") no-repeat right top, url("./images/brush-header_left.png") no-repeat bottom -65px left 0px; }
-    .home-page .wrap-header-block .header-block .sell-block {
-      width: 600px; }
-      .home-page .wrap-header-block .header-block .sell-block .title {
-        font: 160px 'Aescudos';
-        line-height: 190px; }
-      .home-page .wrap-header-block .header-block .sell-block .desc {
-        font-size: 35px;
-        color: #FFF;
-        line-height: 50px;
-        font-weight: 400; }
+.home-page .wrap-header-block .header-block {
+  background: url("./images/brush-header.png") no-repeat right top, url("./images/brush-header_left.png") no-repeat bottom -65px left 0px; }
+  .home-page .wrap-header-block .header-block .sell-block {
+    width: 600px; }
+    .home-page .wrap-header-block .header-block .sell-block .title {
+      font: 160px 'Aescudos';
+      line-height: 190px; }
+    .home-page .wrap-header-block .header-block .sell-block .desc {
+      font-size: 35px;
+      color: #FFF;
+      line-height: 50px;
+      font-weight: 400; }
 
 .wrap-logo {
   display: block;
@@ -325,7 +322,8 @@ p {
     opacity: initial; }
 
 .two-block-section .flex {
-  display: flex; }
+  display: flex;
+  height: 100%; }
   .two-block-section .flex > * {
     width: 50%; }
 .two-block-section.woman-body {
@@ -334,8 +332,10 @@ p {
   .two-block-section.woman-body .wrap-info {
     padding-bottom: 15%; }
 .two-block-section.booking {
-  height: 1060px;
-  background: url("./images/coffetogo-mockup.jpg") no-repeat top center; }
+  height: 1130px;
+  background: url("./images/brush-header_left.png") no-repeat top -70px left 0px, url("./images/coffetogo-mockup.jpg") no-repeat bottom -20px center; }
+  .two-block-section.booking .info {
+    padding-top: 29%; }
 .two-block-section .wrap-info {
   display: flex;
   align-items: center; }
@@ -370,8 +370,39 @@ p {
 .two-block-section__swap:nth-child(2n + 1) {
   background: #F5F5F5; }
 
-.our-services {
-  padding-top: 200px; }
+.four-column-list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%; }
+  .four-column-list .item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 25%;
+    margin-bottom: 70px;
+    text-align: center;
+    transition: 0.3s;
+    border: 6px solid #FFF;
+    box-sizing: border-box; }
+    .four-column-list .item:hover {
+      transform: scale(1.1); }
+    .four-column-list .item .content {
+      flex-grow: 1;
+      padding: 20px 15px; }
+      .four-column-list .item .content > img {
+        display: block; }
+      .four-column-list .item .content .title {
+        display: block;
+        margin-bottom: 10px;
+        color: #FF6F61;
+        font-weight: 700;
+        font-size: 26px;
+        text-transform: uppercase; }
+      .four-column-list .item .content .desc {
+        display: block;
+        margin-bottom: 20px; }
+    .four-column-list .item .button {
+      margin: auto; }
 
 .two-column-list {
   display: flex;
@@ -396,6 +427,7 @@ p {
         font-size: 28px; }
 
 .our-services {
+  padding-top: 200px;
   background: url("./images/brush-slider.png") no-repeat right top; }
   .our-services .header2 {
     margin-bottom: 70px; }

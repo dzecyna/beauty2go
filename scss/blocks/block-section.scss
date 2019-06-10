@@ -1,6 +1,7 @@
 .two-block-section {
   .flex {
     display: flex;
+    height: 100%;
 
     & > * {
       width: 50%;
@@ -17,8 +18,13 @@
   }
 
   &.booking {
-    height: 1060px;
-    background: url("./images/coffetogo-mockup.jpg") no-repeat top center;
+    height: 1130px;
+    background: url('./images/brush-header_left.png') no-repeat top -70px left 0px,
+    url('./images/coffetogo-mockup.jpg') no-repeat bottom -20px center;
+
+    .info {
+      padding-top: 29%;
+    }
   }
 
   .wrap-info {
@@ -72,6 +78,51 @@
   background: $lightGrey;
 }
 
-.our-services {
-  padding-top: 200px;
+.four-column-list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 25%;
+    margin-bottom: 70px;
+    text-align: center;
+    transition: $transitionHover;
+    border: 6px solid $whiteColor;
+    box-sizing: border-box;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    .content {
+      flex-grow: 1;
+      padding: 20px 15px;
+
+      > img {
+        display: block;
+      }
+
+      .title {
+        display: block;
+        margin-bottom: 10px;
+        color: $redColor;
+        font-weight: $fontWeightBold;
+        font-size: 26px;
+        text-transform: uppercase;
+      }
+
+      .desc {
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+
+    .button {
+      margin: auto;
+    }
+  }
 }
