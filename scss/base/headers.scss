@@ -2,17 +2,35 @@
   .header {
     max-width: 500px;
     color: $goldColor;
-    font-size: 65px;
-    line-height: 82px;
+
+    @media screen and (min-width: 1501px) {
+      font-size: 65px;
+      line-height: 82px;
+    }
   }
 }
 
 .header {
   display: block;
-  font-size: 50px;
   font-weight: $fontWeightBold;
-  line-height: 60px;
+  font-size: 26px;
+  line-height: 32px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1001px) {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  @media screen and (min-width: 1301px) {
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  @media screen and (min-width: 1501px) {
+    font-size: 50px;
+    line-height: 60px;
+  }
 
   &.red {
     color: $redColor;

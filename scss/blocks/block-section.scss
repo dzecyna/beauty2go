@@ -1,19 +1,37 @@
 .two-block-section {
-  .flex {
+  .wrap-items {
     display: flex;
-    height: 100%;
+    flex-direction: column-reverse;
 
-    & > * {
-      width: 50%;
+    @media screen and (min-width: 651px) {
+      align-items: flex-start;
+      height: 100%;
+      flex-direction: initial;
+
+      & > * {
+        width: 50%;
+      }
     }
   }
 
   &.woman-body {
-    height: 1072px;
-    background: url("./images/beauty-body-dermatologie.jpg") no-repeat left -25px top;
+    @media screen and (min-width: 651px) {
+      background: url("./images/beauty-body-dermatologie.jpg") no-repeat left -225px top;
+    }
+
+    @media screen and (min-width: 1001px) {
+      height: 502px;
+      background-position: left -25px top;
+    }
+
+    @media screen and (min-width: 1501px) {
+      height: 1072px;
+    }
 
     .wrap-info {
-      padding-bottom: 15%;
+      @media screen and (min-width: 1501px) {
+        padding-bottom: 15%;
+      }
     }
   }
 
@@ -29,11 +47,29 @@
 
   .wrap-info {
     display: flex;
-    align-items: center;
+    align-self: center;
+    padding: 30px 25px;
+    box-sizing: border-box;
+
+    @media screen and (min-width: 651px) {
+      padding: 20px 25px;
+    }
+
+    @media screen and (min-width: 1301px) {
+      padding: 30px;
+    }
 
     .info {
-      width: 62.5%;
+      width: 100%;
       margin: 0 auto;
+
+      @media screen and (min-width: 1301px) {
+        width: 80%;
+      }
+
+      @media screen and (min-width: 1501px) {
+        width: 75%;
+      }
 
       .label {
         display: block;
@@ -42,13 +78,22 @@
         font-size: $defaultSize;
         font-weight: $fontWeightBold;
       }
+
       .header {
         margin-bottom: 20px;
       }
 
       p {
-        font-size: $defaultSize;
+        font-size: $defaultSizeMobile;
         font-weight: $fontWeightLight;
+
+        @media screen and (min-width: 751px) {
+          font-size: $defaultSizeTablet;
+        }
+
+        @media screen and (min-width: 1301px) {
+          font-size: $defaultSize;
+        }
       }
 
       a {
@@ -60,11 +105,14 @@
   .images {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
 
     li {
       flex-grow: 1;
       width: 50%;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }

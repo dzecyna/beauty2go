@@ -1,13 +1,38 @@
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px;
+  padding: 30px;
   background: $lightGrey;
+  text-align: center;
+
+  @media screen and (min-width: 1001px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+  }
 
   .copyright {
-    font-size: 25px;
+    font-size: $defaultSizeMobile;
     color: $grey;
     text-transform: uppercase;
+
+    @media screen and (min-width: 651px) {
+      font-size: $defaultSizeTablet;
+    }
+
+    @media screen and (min-width: 1301px) {
+      font-size: $defaultSizeMobile;
+    }
+
+    @media screen and (min-width: 1501px) {
+      font-size: 25px;
+    }
+  }
+
+  .social-network-icons {
+    @media screen and (max-width: 1000px) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
   }
 }
