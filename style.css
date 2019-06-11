@@ -282,7 +282,7 @@ p {
     min-height: 771px;
     padding-top: 38px;
     box-sizing: border-box; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 601px) {
       .wrap-header-block .header-block {
         background: url("./images/brush-header.png") no-repeat right -80px top -500px; } }
     .wrap-header-block .header-block .schedule {
@@ -295,8 +295,15 @@ p {
       @media screen and (min-width: 1001px) {
         .wrap-header-block .header-block .schedule {
           float: right;
+          margin-right: 40px;
+          color: #FFF; } }
+      @media screen and (min-width: 1301px) {
+        .wrap-header-block .header-block .schedule {
+          margin-right: 50px;
+          font-size: 24px; } }
+      @media screen and (min-width: 1501px) {
+        .wrap-header-block .header-block .schedule {
           margin-right: 90px;
-          color: #FFF;
           font-size: 30px; } }
       .wrap-header-block .header-block .schedule .section {
         margin-bottom: 40px; }
@@ -311,6 +318,14 @@ p {
         .wrap-header-block .header-block .sell-block {
           position: absolute;
           bottom: 0;
+          left: 0;
+          min-height: 418px; } }
+      @media screen and (min-width: 1301px) {
+        .wrap-header-block .header-block .sell-block {
+          left: 0;
+          min-height: 418px; } }
+      @media screen and (min-width: 1501px) {
+        .wrap-header-block .header-block .sell-block {
           left: 177px;
           min-height: 418px; } }
       .wrap-header-block .header-block .sell-block .title {
@@ -334,6 +349,9 @@ p {
     background: none !important; } }
 @media screen and (min-width: 1001px) {
   .home-page .wrap-header-block .header-block {
+    background: url("./images/brush-header.png") no-repeat top -80px right -130px, url("./images/brush-header_left.png") no-repeat bottom 20px left -150px; } }
+@media screen and (min-width: 1501px) {
+  .home-page .wrap-header-block .header-block {
     background: url("./images/brush-header.png") no-repeat right top, url("./images/brush-header_left.png") no-repeat bottom -65px left 0px; } }
 @media screen and (min-width: 1001px) {
   .home-page .wrap-header-block .header-block .sell-block {
@@ -356,7 +374,7 @@ p {
   @media screen and (min-width: 1501px) {
     .home-page .wrap-header-block .header-block .sell-block .desc {
       font-size: 35px;
-      line-height: 190px; } }
+      line-height: 50px; } }
   @media screen and (min-width: 1001px) {
     .home-page .wrap-header-block .header-block .sell-block .desc {
       color: #FFF; } }

@@ -25,7 +25,7 @@ $headerMarginLeft: 25px;
     padding-top: 38px;
     box-sizing: border-box;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 601px) {
       background: url("./images/brush-header.png") no-repeat right -80px top -500px;
     }
 
@@ -39,8 +39,17 @@ $headerMarginLeft: 25px;
 
       @media screen and (min-width: 1001px) {
         float: right;
-        margin-right: 90px;
+        margin-right: 40px;
         color: $whiteColor;
+      }
+
+      @media screen and (min-width: 1301px) {
+        margin-right: 50px;
+        font-size: 24px;
+      }
+
+      @media screen and (min-width: 1501px) {
+        margin-right: 90px;
         font-size: 30px;
       }
 
@@ -64,6 +73,16 @@ $headerMarginLeft: 25px;
       @media screen and (min-width: 1001px) {
         position: absolute;
         bottom: 0;
+        left: 0;
+        min-height: 418px;
+      }
+
+      @media screen and (min-width: 1301px) {
+        left: 0;
+        min-height: 418px;
+      }
+
+      @media screen and (min-width: 1501px) {
         left: 177px;
         min-height: 418px;
       }
@@ -101,6 +120,11 @@ $headerMarginLeft: 25px;
     }
     .header-block {
       @media screen and (min-width: 1001px) {
+        background: url("./images/brush-header.png") no-repeat top -80px right -130px,
+        url("./images/brush-header_left.png") no-repeat bottom 20px left -150px;
+      }
+
+      @media screen and (min-width: 1501px) {
         background: url("./images/brush-header.png") no-repeat right top,
         url("./images/brush-header_left.png") no-repeat bottom -65px left 0px;
       }
@@ -132,7 +156,7 @@ $headerMarginLeft: 25px;
 
           @media screen and (min-width: 1501px) {
             font-size: 35px;
-            line-height: 190px;
+            line-height: 50px;
           }
 
           @media screen and (min-width: 1001px) {
