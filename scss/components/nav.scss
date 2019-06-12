@@ -16,6 +16,14 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .main-nav li {
+    a {
+      font-size: 20px;
+    }
+  }
+}
+
 @media screen and (min-width: 1001px) {
   .content-mobile-menu {
     display: flex;
@@ -72,6 +80,8 @@
   }
 
   .content-mobile-menu {
+    display: flex;
+    flex-direction: column-reverse;
     padding: 100px 20px;
 
     .social-network-icons {
@@ -80,6 +90,7 @@
     }
 
     .main-nav {
+      margin-bottom: 30px;
       text-align: center;
 
       li {
@@ -118,6 +129,9 @@
   }
 
   .mobile-menu-input:checked ~ label .top {
+    position: relative;
+    top: 0.5px;
+
     -webkit-transform: translateY(0px) rotateZ(45deg);
     -moz-transform: translateY(0px) rotateZ(45deg);
     -ms-transform: translateY(0px) rotateZ(45deg);

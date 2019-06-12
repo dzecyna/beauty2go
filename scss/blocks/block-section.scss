@@ -149,16 +149,26 @@
   height: 100%;
 
   .item {
-    flex-grow: 1;
-    width: 25%;
     transition: $transitionHover;
     border: 6px solid $whiteColor;
     box-sizing: border-box;
 
     @include card();
 
-    &:hover {
-      transform: scale(1.1);
+    @media screen and (min-width: 451px) {
+      width: 50%;
+    }
+
+    @media screen and (min-width: 651px) {
+      width: 33%;
+    }
+
+    @media screen and (min-width: 1001px) {
+      width: 25%;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }

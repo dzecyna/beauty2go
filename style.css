@@ -561,8 +561,6 @@ p {
   flex-wrap: wrap;
   height: 100%; }
   .four-column-list .item {
-    flex-grow: 1;
-    width: 25%;
     transition: 0.3s;
     border: 6px solid #FFF;
     box-sizing: border-box;
@@ -580,15 +578,30 @@ p {
         margin-bottom: 10px;
         color: #FF6F61;
         font-weight: 700;
-        font-size: 26px;
+        font-size: 20px;
         text-transform: uppercase; }
+        @media screen and (min-width: 1001px) {
+          .four-column-list .item .content .title {
+            font-size: 22px; } }
+        @media screen and (min-width: 1301px) {
+          .four-column-list .item .content .title {
+            font-size: 26px; } }
       .four-column-list .item .content .desc {
         display: block;
         margin-bottom: 20px; }
     .four-column-list .item .button {
       margin: auto; }
-    .four-column-list .item:hover {
-      transform: scale(1.1); }
+    @media screen and (min-width: 451px) {
+      .four-column-list .item {
+        width: 50%; } }
+    @media screen and (min-width: 651px) {
+      .four-column-list .item {
+        width: 33%; } }
+    @media screen and (min-width: 1001px) {
+      .four-column-list .item {
+        width: 25%; }
+        .four-column-list .item:hover {
+          transform: scale(1.1); } }
 
 .two-column-list {
   display: flex;
@@ -921,8 +934,14 @@ p {
       margin-bottom: 10px;
       color: #FF6F61;
       font-weight: 700;
-      font-size: 26px;
+      font-size: 20px;
       text-transform: uppercase; }
+      @media screen and (min-width: 1001px) {
+        .team-card .content .title {
+          font-size: 22px; } }
+      @media screen and (min-width: 1301px) {
+        .team-card .content .title {
+          font-size: 26px; } }
     .team-card .content .desc {
       display: block;
       margin-bottom: 20px; }
@@ -983,6 +1002,9 @@ p {
     margin-left: 20px; }
     .main-nav li a {
       font-size: 16px; } }
+@media screen and (max-width: 1000px) {
+  .main-nav li a {
+    font-size: 20px; } }
 @media screen and (min-width: 1001px) {
   .content-mobile-menu {
     display: flex;
@@ -1019,11 +1041,14 @@ p {
     overflow: hidden; }
 
   .content-mobile-menu {
+    display: flex;
+    flex-direction: column-reverse;
     padding: 100px 20px; }
     .content-mobile-menu .social-network-icons {
       justify-content: center;
       margin-bottom: 40px; }
     .content-mobile-menu .main-nav {
+      margin-bottom: 30px;
       text-align: center; }
       .content-mobile-menu .main-nav li {
         margin-bottom: 15px; }
@@ -1053,6 +1078,8 @@ p {
     background-color: #fff; }
 
   .mobile-menu-input:checked ~ label .top {
+    position: relative;
+    top: 0.5px;
     -webkit-transform: translateY(0px) rotateZ(45deg);
     -moz-transform: translateY(0px) rotateZ(45deg);
     -ms-transform: translateY(0px) rotateZ(45deg);
