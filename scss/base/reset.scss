@@ -40,7 +40,15 @@ input, button {
 }
 
 html, body {
-	font: $fontWeightLight $defaultSize 'Open Sans', sans-serif;
+	font: $fontWeightLight $defaultSizeMobile 'Open Sans', sans-serif;
 	color: $mainColor;
 	line-height: 1.35;
+
+	@media screen and (min-width: 651px) {
+		font-size:$defaultSizeTablet;
+	}
+
+	@media screen and (min-width: 1001px) {
+		font-size: $defaultSize;
+	}
 }

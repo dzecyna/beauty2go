@@ -1,7 +1,27 @@
 .team-card {
-  float: left;
-  max-width: 500px;
-  margin-right: 50px;
-
   @include card();
+
+  float: left;
+  max-width: 300px;
+  margin-right: 40px;
+  margin-bottom: 0;
+
+  @media screen and (max-width: 650px) {
+    float: none;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1001px) {
+    margin-right: 70px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1301px) {
+    max-width: 400px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1301px) {
+    max-width: 500px;
+  }
 }

@@ -1,15 +1,22 @@
 .button {
-  padding: 0 24px;
-  min-width: 218px;
+  padding: 0 20px;
+  min-width: 190px;
+  font-size: 18px;
+  line-height: 50px;
   border: 2px solid $goldColor;
-  font-size: 20px;
-  line-height: 56px;
   border-radius: $radius;
   text-transform: uppercase;
   font-weight: $fontWeightBold;
   color: $goldColor;
   transition: $transitionHover;
   cursor: pointer;
+
+  @media screen and (min-width: 1301px) {
+    padding: 0 24px;
+    min-width: 218px;
+    font-size: 20px;
+    line-height: 56px;
+  }
 
   @media screen and (min-width: 1501px) {
     padding: 0 32px;

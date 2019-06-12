@@ -1,9 +1,51 @@
 .contact-section {
   display: flex;
-  padding: 105px 80px;
+  padding: 40px 25px;
+
+  @media screen and (max-width: 1000px) {
+    flex-wrap: wrap;
+    font-size: $defaultSizeTablet;
+  }
+
+  @media screen and (max-width: 650px) {
+    flex-wrap: wrap;
+    font-size: $defaultSizeMobile;
+  }
+
+  @media screen and (min-width: 1301px) {
+    padding: 70px 40px;
+  }
+
+  @media screen and (min-width: 1501px) {
+    padding: 105px 80px;
+  }
 
   .contact-block {
-    margin-left: 100px;
+    margin-left: 40px;
+
+    @media screen and (max-width: 1000px) {
+      flex-grow: 1;
+      width: 50%;
+      margin: 0 0 35px 0;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 650px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 1001px) {
+      margin-left: 40px;
+    }
+
+    @media screen and (min-width: 1301px) {
+      margin-left: 70px;
+    }
+
+    @media screen and (min-width: 1501px) {
+      margin-left: 100px;
+    }
 
     &:first-child {
       margin-left: 0;
@@ -11,14 +53,20 @@
 
     & > span {
       display: block;
+
+      @media screen and (min-width: 651px) {
+        font-size: $defaultSizeTablet;
+      }
     }
 
     .title {
       color: $goldColor;
-      font-size: 34px;
-
+      font-size: 28px;
       font-weight: $fontWeightBold;
-      line-height: 46px;
+
+      @media screen and (min-width: 1301px) {
+        font-size: 34px;
+      }
     }
 
     &.red {
@@ -57,9 +105,11 @@
       display: block;
       width: 100%;
       margin: 30px 0;
+      max-width: 500px;
 
       &.email {
         padding: 0 0 10px 40px;
+        box-sizing: border-box;
         background: url("./images/email-icon2.svg") no-repeat left 0 top 5px;
       }
     }
