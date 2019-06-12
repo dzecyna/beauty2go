@@ -31,6 +31,12 @@
     align-items: flex-end;
   }
 
+  .home-page {
+    .content-mobile-menu {
+      @include animationFadeIn();
+    }
+  }
+
   .main-nav {
     ul {
       display: flex;

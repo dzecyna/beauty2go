@@ -408,6 +408,8 @@ p {
     align-items: flex-start;
     margin-bottom: 40px; }
 
+.home-page .wrap-header-block:before {
+  opacity: 1; }
 @media screen and (max-width: 1000px) {
   .home-page .wrap-header-block {
     background: none !important; } }
@@ -432,6 +434,48 @@ p {
   .home-page .wrap-header-block .header-block .sell-block {
     left: 177px;
     min-height: 418px; } }
+.home-page .wrap-header-block .header-block .sell-block .title {
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 400ms both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 400ms both; }
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+.home-page .wrap-header-block .header-block .sell-block .desc {
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 500ms both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 500ms both; }
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
 .home-page .wrap-header-block .header-block .header-quotas .title {
   font: 70px 'Aescudos';
   line-height: 80px; }
@@ -1011,6 +1055,19 @@ p {
     flex-direction: column;
     align-items: flex-end; }
 
+  .home-page .content-mobile-menu {
+    -webkit-animation: fade-in 500ms cubic-bezier(0.39, 0.575, 0.565, 1) 400ms both;
+    animation: fade-in 500ms cubic-bezier(0.39, 0.575, 0.565, 1) 400ms both; }
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+  @keyframes fade-in {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
   .main-nav ul {
     display: flex; }
     .main-nav ul li:first-child {

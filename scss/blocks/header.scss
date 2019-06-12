@@ -136,6 +136,10 @@ $headerMarginLeft: 25px;
 
 .home-page {
   .wrap-header-block {
+    &:before {
+      opacity: 1;
+    }
+
     @media screen and (max-width: 1000px) {
       background: none !important;
     }
@@ -167,6 +171,14 @@ $headerMarginLeft: 25px;
         @media screen and (min-width: 1501px) {
           left: 177px;
           min-height: 418px;
+        }
+
+        .title {
+          @include animationSlideInLeft(400ms);
+        }
+
+        .desc {
+          @include animationSlideInLeft(500ms);
         }
       }
 

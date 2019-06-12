@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('body.visibility-hidden').addClass('visibility-shown');
+    document.body.classList.add('visibility-shown');
 
     const slider = $('#slider');
 
