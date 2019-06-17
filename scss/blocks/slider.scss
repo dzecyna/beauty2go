@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   padding: 50px 0;
-  background: $lightGrey url("./images/brush-slider.png") no-repeat right top;
+  background: $lightGrey url("../images/brush-slider.png") no-repeat right top;
 
   @media screen and (min-width: 1001px) {
     padding: 25px 0;
@@ -125,7 +125,7 @@
           top: -60px;
           width: 61px;
           height: 67px;
-          background: url("./images/hochkomma.png") no-repeat;
+          background: url("../images/hochkomma.png") no-repeat;
         }
       }
     }

@@ -25,7 +25,7 @@ $headerMarginLeft: 25px;
     box-sizing: border-box;
 
     @media screen and (min-width: 601px) {
-      background: url("./images/brush-header.png") no-repeat right -80px top -500px;
+      background: url("../images/brush-header.png") no-repeat right -80px top -500px;
     }
 
     @media screen and (min-width: 1001px) {
@@ -44,6 +44,7 @@ $headerMarginLeft: 25px;
         float: right;
         margin-right: 40px;
         color: $whiteColor;
+        max-width: 330px;
       }
 
       @media screen and (min-width: 1301px) {
@@ -54,6 +55,7 @@ $headerMarginLeft: 25px;
       @media screen and (min-width: 1501px) {
         margin-right: 90px;
         font-size: 30px;
+        max-width: 360px;
       }
 
       .section {
@@ -69,8 +71,9 @@ $headerMarginLeft: 25px;
           text-transform: uppercase;
         }
 
-        .info {
+        p {
           display: block;
+          margin: 0;
         }
       }
     }
@@ -145,13 +148,13 @@ $headerMarginLeft: 25px;
     }
     .header-block {
       @media screen and (min-width: 1001px) {
-        background: url("./images/brush-header.png") no-repeat top -80px right -130px,
-        url("./images/brush-header_left.png") no-repeat bottom 20px left -150px;
+        background: url("../images/brush-header.png") no-repeat top -80px right -130px,
+        url("../images/brush-header_left.png") no-repeat bottom 20px left -150px;
       }
 
       @media screen and (min-width: 1501px) {
-        background: url("./images/brush-header.png") no-repeat right top,
-        url("./images/brush-header_left.png") no-repeat bottom -65px left 0px;
+        background: url("../images/brush-header.png") no-repeat right top,
+        url("../images/brush-header_left.png") no-repeat bottom -65px left 0px;
       }
 
       .sell-block {

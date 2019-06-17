@@ -12,7 +12,7 @@ img {
   vertical-align: middle;
 }
 
-a {
+a:not(.button) {
   text-decoration: none;
   transition: $transitionHover;
   color: $goldColor;

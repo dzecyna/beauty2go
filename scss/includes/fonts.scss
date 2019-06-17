@@ -1,26 +1,26 @@
 @font-face {
   font-family: 'Aescudos';
-  src: url('./assert/fonts/Aescudos/Aescudos.eot') format('embedded-opentype');
+  src: url('../fonts/Aescudos/Aescudos.eot') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Aescudos';
-  src: url("./assert/fonts/Aescudos/Aescudos.woff" ) format('woff'),
-    url('./assert/fonts/Aescudos/Aescudos.ttf') format('truetype'),
-    url('./assert/fonts/Aescudos/Aescudos.svg#Aescudos') format('svg'),
-    url('./assert/fonts/Aescudos/Aescudos.otf') format('svg');
+  src: url("../fonts/Aescudos/Aescudos.woff" ) format('woff'),
+    url('../fonts/Aescudos/Aescudos.ttf') format('truetype'),
+    url('../fonts/Aescudos/Aescudos.svg#Aescudos') format('svg'),
+    url('../fonts/Aescudos/Aescudos.otf') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Segoe-ui';
-  src: url('./assert/fonts/segoe-ui/segoe-ui-italic.ttf') format('truetype');
-  //url("./assert/fonts/segoe-ui/segoe-ui.woff" ) format('woff');
-  //url('./assert/fonts/segoe-ui/segoe-ui.svg#segoe-ui') format('svg'),
-  //url('./assert/fonts/segoe-ui/segoe-ui.otf') format('svg');
+  src: url('../fonts/segoe-ui/segoe-ui-italic.ttf') format('truetype');
+  //url("../fonts/segoe-ui/segoe-ui.woff" ) format('woff');
+  //url('../fonts/segoe-ui/segoe-ui.svg#segoe-ui') format('svg'),
+  //url('../fonts/segoe-ui/segoe-ui.otf') format('svg');
   font-weight: normal;
   font-style: normal;
 }
