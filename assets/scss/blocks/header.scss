@@ -1,0 +1,53 @@
+.header{
+  background: url("./images/woman-header.png") no-repeat #000;
+  background-position: top center;
+  position: relative;
+  min-height: 770px;
+}
+.top-header{
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1001px){
+.wrap-nav {
+  margin-right: 80px;
+}}
+.menu-nav{
+  display: flex;
+}
+.menu-nav li {
+  margin-left: 40px;
+}
+.main-nav  ul li a {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #2D2926;
+  font-size: 25px;
+}
+.header .header-block .schedule {
+  overflow: hidden;
+  font-weight: 400;
+  font-family: 'Segoe-ui', sans-serif;
+  font-size: 22px;
+  line-height: 40px;
+  margin-left: 25px;
+  float: right;
+  margin-right: 40px;
+  color: #FFF;
+  max-width: 330px;
+}
+.two-block .images {
+  display: flex;
+  flex-wrap: wrap;
+}
+.two-block .images li {
+  flex-grow: 1;
+  width: 50%;
+  list-style: none;
+}
+
+
+
+
+

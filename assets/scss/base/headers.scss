@@ -1,0 +1,28 @@
+.two-block{
+  display: flex;
+}
+.two-block .wrap-items{
+  display: flex;
+}
+.two-block .block-info {
+  align-self: center;
+  padding: 30px 25px;
+}
+.block-info{
+  width: 75%;
+}
+.block-info h2 {
+  font-size: 60px;
+  max-width: 500px;
+  color: #E1B87F;
+}
+.block-info p{
+  font-size: 22px;
+  font-weight: 300;
+  font-family: Open Sans, sans-serif;
+  line-height: 1.6;
+}
+.two-block .images {
+  display: flex;
+  flex-wrap: wrap;
+}

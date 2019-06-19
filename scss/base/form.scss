@@ -1,6 +1,0 @@
-.form-input {
-  color: $redColor;
-  border-bottom: 2px solid $redColor;
-}
-
-@include colorPlaceholder(".form-input", $redColor);

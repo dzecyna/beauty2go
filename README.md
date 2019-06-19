@@ -1,2 +1,0 @@
-# beauty2go
-

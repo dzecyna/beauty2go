@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,GAAI;EACF,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,MAAM",
+"sources": ["assets/scss/base/global.scss"],
+"names": [],
+"file": "global.css"
+}
