@@ -32,17 +32,14 @@
 
 .block-info {
   width: 75%; }
-
-.block-info h2 {
-  font-size: 60px;
-  max-width: 500px;
-  color: #E1B87F; }
-
-.block-info p {
-  font-size: 22px;
-  font-weight: 300;
-  font-family: Open Sans, sans-serif;
-  line-height: 1.6; }
+  .block-info h2 {
+    font-size: 60px;
+    max-width: 500px;
+    color: #E1B87F; }
+  .block-info p {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.6; }
 
 .two-block .images {
   display: flex;
@@ -52,9 +49,54 @@ img {
   max-width: 100%;
   vertical-align: middle; }
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, video {
+  display: block; }
+
+ul {
+  list-style: none; }
+
+input, button {
+  border: none;
+  font: 300 30px "Open Sans", sans-serif; }
+
+:focus {
+  outline: 0; }
+
+html, body {
+  font: 300 20px "Open Sans", sans-serif;
+  line-height: 1.35; }
+  @media screen and (min-width: 651px) {
+    html, body {
+      font-size: 22px; } }
+  @media screen and (min-width: 1001px) {
+    html, body {
+      font-size: 30px; } }
+
 .header {
-  background: url("./images/woman-header.png") no-repeat #000;
-  background-position: top center;
+  background-image: url("./images/woman-header.png"), url("./images/brush-header.png");
+  background-position: top center, top right;
+  background-repeat: no-repeat;
   position: relative;
   min-height: 770px; }
 
@@ -66,17 +108,17 @@ img {
   .wrap-nav {
     margin-right: 80px; } }
 .menu-nav {
-  display: flex; }
-
-.menu-nav li {
-  margin-left: 40px; }
-
-.main-nav ul li a {
-  position: relative;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #2D2926;
-  font-size: 25px; }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .menu-nav li {
+    margin-left: 40px; }
+    .menu-nav li a {
+      position: relative;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: #2D2926;
+      font-size: 25px; }
 
 .header .header-block .schedule {
   overflow: hidden;
@@ -93,11 +135,10 @@ img {
 .two-block .images {
   display: flex;
   flex-wrap: wrap; }
-
-.two-block .images li {
-  flex-grow: 1;
-  width: 50%;
-  list-style: none; }
+  .two-block .images li {
+    flex-grow: 1;
+    width: 50%;
+    list-style: none; }
 
 .woman {
   background: url("./images/beauty-body.png") no-repeat left -225px top; }

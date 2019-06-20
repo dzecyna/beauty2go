@@ -1,6 +1,8 @@
 .header{
-  background: url("./images/woman-header.png") no-repeat #000;
-  background-position: top center;
+  background-image: url("./images/woman-header.png"),
+                    url("./images/brush-header.png");
+  background-position: top center, top right;
+  background-repeat: no-repeat;
   position: relative;
   min-height: 770px;
 }
@@ -14,16 +16,20 @@
 }}
 .menu-nav{
   display: flex;
-}
-.menu-nav li {
-  margin-left: 40px;
-}
-.main-nav  ul li a {
-  position: relative;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #2D2926;
-  font-size: 25px;
+  flex-direction: column;
+  align-items: flex-end;
+
+  li{
+    margin-left: 40px;
+
+    a{
+      position: relative;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: #2D2926;
+      font-size: 25px;
+    }
+  }
 }
 .header .header-block .schedule {
   overflow: hidden;
@@ -40,11 +46,12 @@
 .two-block .images {
   display: flex;
   flex-wrap: wrap;
-}
-.two-block .images li {
-  flex-grow: 1;
-  width: 50%;
-  list-style: none;
+
+  li{
+    flex-grow: 1;
+    width: 50%;
+    list-style: none;
+  }
 }
 
 
